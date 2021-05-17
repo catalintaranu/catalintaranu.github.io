@@ -1,0 +1,865 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth
+
+
+}
+#container1{
+    background-image: url(/images/bg21.jpg);
+    height: 900px;
+    
+}
+/* Navigare */
+.logo {
+    height: 75px;
+    width: 180px;
+}
+
+nav {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    min-height: 100px;
+    align-items: center;
+    
+}
+#ulnav {
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+    
+    
+}
+   
+
+#ulnav a {
+    text-decoration: none;
+    letter-spacing: 2px ;
+    font-weight: 400 ;
+    font-size: 14px;
+    color:#f6f5f6;
+}
+.anav::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #f6f5f6;
+    transition: width .4s;
+}
+.anav:hover::after {
+    width :100%;
+    transition: width .4s;
+}
+li {
+    list-style: none;
+}
+.line {
+    background: #c5c6c7;
+    margin: 3px;
+    border: 0;
+    width: 25px;
+    height: 3px;
+
+}
+#hamburger {
+    cursor: pointer;
+    display: none;
+}
+
+/* Sub Navigare */
+.container2 {
+    display: grid;
+    grid-template-columns: 2fr 1.5fr;
+    align-items: center;
+    column-gap: 10%;
+    padding-left: 10%;
+    padding-top: 5%;
+    
+    
+    
+}
+.div1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.div2 {
+    background-image: url(/images/mypicture2.jpg);
+    width:400px;
+    height: 400px;
+    border-radius: 50%;
+    margin: 5px 5px 5px 5px;
+}
+.div2:hover {
+    width:410px;
+    height: 410px;
+    transition: 0.3s;
+    margin: 0px;
+}
+.div2:hover::after {
+    transition: 0.5s;
+}
+.h12{
+    font-size: 70px;
+    font-weight: 200;
+    color: #f7f5e6 ;
+    text-align: center;
+
+    
+}
+h5 {
+    font-size: 18px;
+}
+.p1 {
+    color: #c5c6c7;
+    text-align: center;
+    padding: 4%;
+    font-size: large;
+    font-weight: 500;
+}
+.btn1 {
+    width: 200px;
+    height: 60px;
+    background: transparent;
+    border: 2px solid  #f6f5f6;
+    border-radius: 7px;
+    text-align: center;
+    color: #f7f5e6;
+    font-size: 20px;
+    cursor: pointer;
+    
+    
+}
+.btn1:hover {
+    width: 190px;
+    height: 55px;
+    transition: 0.5s;
+    font-size: 17px;
+    margin-top: 5px;
+}
+#arrowcontainer {
+    padding-top: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+#downarrow {
+    cursor: pointer;
+    height: 60px;
+    width: 60px;
+    align-self: center;
+}
+#downarrow:hover {
+    cursor: pointer;
+    height: 65px;
+    width: 65px;
+    padding-top: 10px;
+    transition: 0.3s;
+    ;
+}
+/* Skills */
+
+.container3 {
+    height: 580px;
+    width: 100%;
+    background-color: #f7f5e6;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 3%;
+    padding-bottom: 2%;
+    
+}
+.container31 {
+    width: 55%;
+    height: 100%;
+    padding: 3%;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 3%;
+}
+.h2 {
+    color:  #52658f;
+    font-size: 35px;
+    font-weight: 300;
+}
+.skillbox {
+    height: 100%;
+    border-radius: 7px;
+    border: 2px solid #52658f;
+    
+}
+.skillh1 {
+    text-align: center;
+    color: #333a56;
+    font-size: 25px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.skillul{
+    text-align: center;
+  
+}
+.skillul li {
+    padding-top: 5px;
+    color:  #52658f;
+    font-size: 20px;
+}
+.skilla {
+    color:  #52658f;
+    font-size: 20px;
+}
+.container3 h3 {
+    font-size: 15px;
+    color:#1f2833 ;
+}
+/* Contact */
+.container4 {
+    height: 580px;
+    width: 100%;
+    background-image: url(/images/bgcontact.jpg);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.container4 h2{
+    
+    color: #f7f5e6;
+    font-size: 35px;
+    font-weight: 300;
+}
+.container41{
+    width: 50%;
+    height: 90%;
+    padding-bottom: 3%;
+    padding-top: 1.8%;
+    padding-left: 5%;
+    padding-right: 1%;
+}
+/* Form*/
+.spanform {
+    color: #f7f5e6;
+    font-size: 20px;
+    font-weight: 100;
+    padding-top: 10%;
+}
+form {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;   
+}
+.divform {
+    display: flex;
+    flex-direction: column;
+    
+}
+.inputbutton {
+   margin-top: 6%;
+   
+   height: 40px;
+   width: 49.5%;
+
+}
+.inputbutton:hover {
+    width: 48%;
+    height: 38px;
+    transition: 0.5s;
+    font-size: 17px;
+    margin-top: 7%;
+    margin-left: 1%;
+}
+
+.inputname {
+    width: 49.5%;
+    height: 40px;
+    background: transparent;
+    border: 2px solid  #f6f5f6;
+    border-radius: 7px;
+    text-align: center;
+    color: #f7f5e6;
+    font-size: 20px;
+    font-weight: 100;
+    margin-top: 2%;
+}
+.inputemail{
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    border: 2px solid  #f6f5f6;
+    border-radius: 7px;
+    text-align: center;
+    color: #f7f5e6;
+    font-size: 20px;
+    margin-top: 4%;
+}
+textarea {
+    margin-top: 4%;
+    height: 80px;
+    border-radius: 7px;
+}
+
+.imgsvg {
+    height: 30px;
+    width: 40px;
+}
+#gmail {
+    display: flex;
+    gap: 4%;
+}
+h4 {
+    color: #f6f5f6;
+    font-weight: 100;
+    padding-top: 2%;
+}
+/* Footer*/
+.footer {
+    height: 120px;
+    width: 100%;
+    background-color:#1f2833;
+    display: flex;
+    justify-content: center;
+
+}
+.footerdiv {
+    width: 90%;
+
+    display: grid;
+    grid-template-columns: 56% 44%;
+    align-items: center;
+    justify-items: end;
+
+}
+.footerdiv h3 {
+    font-size: 13px;
+    color: #f7f5e6;
+    font-weight: 100;
+}
+.icons {
+    display: flex;
+    width: 50%;
+    column-gap: 3%;
+    align-items: center;
+    
+    
+}
+.icon {
+    height: 60px;
+    width: 60px;
+    margin: 5px ;
+
+}
+.icon:hover{
+    height: 70px;
+    width: 70px;
+    margin: 0px;
+    transition: 0.3s;
+}
+
+
+
+
+
+
+/* -------------------------media max-width 860px------------------------------*/
+@media only screen and (max-width: 860px) {
+    /* Navigare */
+
+.logo {
+    height: 65px;
+    width: 160px;
+}    
+#hamburger {
+    display: block;
+    
+}
+.hamburgerclick {
+    border: 1px solid white;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+#ulnav {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    padding-top: 6%;
+}
+.anav  {
+    color:#1f2833 !important;
+
+}
+#ulnav.arata {
+    display: flex;
+    transition: 0.3s;
+    
+}
+nav.navtelefon {
+    padding-top: 20px;
+    color:#1f2833 ;
+
+}
+nav.navtelefon li {
+  
+    background-color: #e8e8e8;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    padding-top: 15px;
+    
+}
+
+.anav::after {
+    display: none;
+}
+
+/* Sub Navigare */
+.container2 {
+    display: flex; 
+    flex-direction: column-reverse;
+    padding: 0px;
+    padding-top: 120px;
+}
+.farapadding {
+    padding-top: 15px !important ;
+}
+.div2 {
+    background-image: url(/images/mypicture.jpg);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.div2:hover {
+    background-image: url(/images/mypicture.jpg);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.h12 {
+    font-size: 40px;
+    padding-left: 0px;
+}
+.p1 {
+    font-size: 15px;
+    padding-top: 2%;
+}
+h5{
+    font-size: 14px;
+}
+#arrowcontainer {
+    padding-top: 95px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+/* Skills */
+
+.container3 {
+    height: 900px;
+    width: 100%;
+    background-color: #f7f5e6;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 3%;
+    padding-bottom: 10%;
+    
+}
+.container31 {
+    width: 80%;
+    height: 100%;
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+   
+}
+.skillbox {
+    
+    border-radius: 7px;
+    border: 1px solid #52658f;
+}
+.skillh1 {
+    padding : 10px 0px 10px 0px;
+
+}
+/* Contact */
+.container4 {
+    height: 580px;
+    width: 100%;
+    background-image: url(/images/bgcontact.jpg);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 9%;
+    padding-bottom: 2%;
+}
+.container4 h2{
+    
+    color: #f7f5e6;
+    font-size: 30px;
+    font-weight: 100;
+}
+.container41{
+    width: 95%;
+    height: 95%;
+    
+}
+/* Form*/
+.spanform {
+    color: #f7f5e6;
+    font-size: 13px;
+    font-weight: 100;
+    
+    padding-top: 32px;
+}
+form {
+    display: grid;
+    grid-template-columns: 1fr 3fr;   
+}
+.divform {
+    margin-top: 30px ;
+    display: flex;
+    flex-direction: column;
+    
+}
+.inputbutton {
+   margin-top: 20px;
+   border: 1px solid #f6f5f6;
+   font-size: 13px;
+   height: 40px;
+   width: 49.5%;
+
+}
+.inputbutton:hover {
+    width: 48%;
+    height: 38px;
+    transition: 0.5s;
+    font-size: 13px;
+    margin-top: 10%;
+    margin-left: 1%;
+}
+
+.inputname {
+    width: 49%;
+    height: 40px;
+    background: transparent;
+    border: 1px solid  #f6f5f6;
+    border-radius: 7px;
+    text-align: center;
+    color: #f7f5e6;
+    font-size: 13px;
+    font-weight: 100;
+    margin-top: 15px;
+}
+.inputemail{
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    border: 1px solid  #f6f5f6;
+    border-radius: 7px;
+    text-align: center;
+    color: #f7f5e6;
+    font-size: 13px;
+    margin-top: 20px;
+}
+textarea {
+    margin-top: 4%;
+    height: 80px;
+    border-radius: 7px;
+    margin-top: 20px;
+}
+
+.imgsvg {
+    height: 30px;
+    width: 40px;
+}
+#gmail {
+    display: flex;
+    gap: 4%;
+}
+div #gmail h4 {
+    color: #f6f5f6;
+    font-weight: 100;
+    padding-top: 2%;
+    font-size: 13px;
+
+}
+
+/* Footer*/
+.footer {
+    height: 120px;
+    width: 100%;
+    background-color:#1f2833;
+    display: flex;
+    
+    justify-content: center;
+
+}
+.footerdiv {
+    width: 80%;
+
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+
+
+}
+.footerdiv h3 {
+    font-size: 12px;
+    color: #f7f5e6;
+    font-weight: 100;
+    padding-bottom: 20px;
+}
+.icons {
+    display: flex;
+    width: 190px;
+    column-gap: 3%;
+    align-items: center;
+    
+}
+.icon {
+    height: 50px;
+    width: 50px;
+}
+.icon:hover{
+    height: 50px;
+    width: 50px;
+
+}
+
+}
+/* -------------------------media max-width 1360px------------------------------*/
+@media only screen and (min-width: 861px) and (max-width: 1360px) {
+
+#ulnav {
+    width: 45%;
+}
+
+/* Sub Navigare */
+.container2 {
+    grid-template-columns: 2fr 1.5fr;
+    column-gap: 5%;
+    padding-left: 3%;
+    padding-top: 5%;
+
+}
+.div1 {
+
+    justify-content: center;
+}
+.div2 {
+    background-image: url(/images/mypicture3.jpg);
+    width:270px;
+    height: 270px;
+    border-radius: 50%;
+    margin: 5px 5px 5px 5px;
+}
+.div2:hover {
+    width:280px;
+    height: 280px;
+    transition: 0.3s;
+    margin: 0px;
+}
+
+.h12{
+    padding-top: 10%;
+    font-size: 50px;
+}
+h5 {
+    font-size: 17px;
+}
+.p1 {
+    padding: 4%;
+    font-size: large;
+    font-weight: 300;
+}
+#arrowcontainer{
+    padding-top: 200px;
+}
+
+/* Skills */
+
+.container3 {
+    height: 480px;   
+}
+.container31 {
+    width: 75%;
+}
+.skillh1 {
+    font-size: 23px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/* Contact */
+.container4 {
+    height: 530px;
+    padding-top: 2%;
+}
+.container4 h2{
+    font-size: 30px;
+    font-weight: 100;
+    padding-bottom: 3%;
+}
+.container41{
+    width: 80%;
+}
+/* Form*/
+.spanform {
+    font-size: 17px;
+    padding-top: 23px;
+}
+
+.inputname {
+    width: 48.9%;
+    font-size: 17px;
+}
+.inputbutton {
+    height: 40px;
+    width: 50%;
+ }
+ .inputbutton:hover {
+     font-size: 15px;
+}
+/* Footer*/
+.footer {
+    padding-right: 20px;
+}
+
+}
+
+
+/* ---------------------Projects--------------------------*/
+
+.container6{
+    width: 100%;
+    height: auto;
+    background-image: url(/images/bgp3.jpg);
+    background-attachment: fixed;
+    padding: 2% 3% 3% 5%;
+}
+.container61 {
+
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+    padding-top: 2%;
+}
+.arrow2 {
+    width: 50px;
+    height: 50px;
+    margin: 5px 0px 0px 5px;
+
+}
+#homearrowcont{
+    height: 80px;
+}
+
+
+.arrow2:hover {
+    cursor: pointer;
+    height: 55px;
+    width: 55px;
+    transition: 0.3s;
+    margin: 2px 0px 0px 2px;
+    
+}
+.divprojects {
+    min-height: 300px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(15rem , 300px));
+    
+    gap:10px;
+
+}
+.container6 h2 {
+    color: #f7f5e6;
+    font-size: 20px;
+    font-weight: 100;
+}
+.container61 h2 {
+    color: #f7f5e6;
+    font-size: 25px;
+    font-weight: 300;
+}
+.divprojects div {
+    height: 300px;
+
+    border-radius: 7px;
+    max-width: 300px;
+
+}
+.divprojects div:hover {
+    height: 294px;
+    width: 294;
+    margin: 3px;
+    transition: 0.3s;
+}
+
+#project11 {
+    background-image: url(/images/Dog.jpg);
+}
+#project12 {
+    background-image: url(/images/illproject2.jpg);
+}
+#project13 {
+    background-image: url(/images/illproject3.jpg);
+}
+#project14 {
+    background-image: url(/images/illproject4.jpg);
+    background-repeat: no-repeat;
+}
+
+#project21 {
+    background-image: url(/images/psproject1.jpg);
+}
+#project22 {
+    background-image: url(/images/psproject2.jpg);
+}
+#project23 {
+    background-image: url(/images/psproject3.jpg);
+}
+#project31 {
+    background-image: url(/images/adobeXDp1bg.jpg);
+}
+#project51 {
+    background-image: url(/images/WPproject1.jpg);
+}
+#project41 {
+    background-image: url(/images/bsproject1.jpg);
+}
+
+#project61 {
+    background-image: url(/jsproject1/Img/img1.png);
+
+}
+
+#project62 {
+    background-image: url(/jsproject2/img/jspr2bg.png);
+
+}
+
+
+
+/* -------------------------media max-width 860px------------------------------*/
+@media only screen and (max-width: 720px) {
+    .divprojects {
+        justify-content: center;
+    }
+    .container61 h2 {
+        text-align: center;
+
+    }
+}
